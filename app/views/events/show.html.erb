@@ -32,6 +32,11 @@
                 </span>
               </div>
             <% end %>
+            <% if @event.only_woman %>
+              <span class="ms-2">
+                <%= Event.human_attribute_name :only_woman %>
+              </span>
+            <% end %>
           </div>
           <div>
             <%= image_tag @event.decorate.thumbnail, class: 'w-100' %>
