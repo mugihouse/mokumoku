@@ -7,7 +7,7 @@
       <h4 class="card-title fw-bold">
         <%= link_to event.title, event_path(event)  %>
       </h4>
-      <p class="card-only-woman text-right">
+      <p class="card-only-woman">
         <%= Event.human_attribute_name :only_woman %>
       </p>
       <p class="card-text"><%= event.content %></p>
